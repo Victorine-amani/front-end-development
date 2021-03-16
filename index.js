@@ -1,7 +1,6 @@
-function fruit() {
-    var fruits = ["Avocado", "Grapes", "Mangoes", "Oranges", "Kiwi"];
-    for (var i = 0; i < fruits.length; i++) {
-        console.log(fruits[i])
-    }
+function fruitCost(fruitName, quantity, cost) {
+    var totalCost = cost * quantity;
+    return quantity + " " + fruitName + " for KES " + totalCost;
+
 }
-fruit()
+console.log(fruitCost("Orange", 2, 30.00));
